@@ -1,3 +1,4 @@
+<!-- group declaration to give access for specific group or person -->
 <odoo>
     <record model="ir.module.category" id="vendor_service_id">
 
@@ -15,10 +16,4 @@
         <field name="category_id" ref="vendor_service_id" />
 
     </record>
-    <!-- <record id = "fleet_rule_vehicle_visibility_user" model = "ir.rule"> 
-        <field name = "name"> User can only see his / her vehicle </field> 
-        <field name = "model_id" ref = "model_fleet_vehicle" /> 
-        <field name = "groups" eval = "[(4, ref ('fleet_group_user'))]" />  
-        <field name = "domain_force"> [('driver_id', '=', user.partner_id.id)] </field> 
-     </record> -->
 </odoo>

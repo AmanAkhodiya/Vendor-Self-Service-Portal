@@ -1,5 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <odoo>
+
+    <!-- list view for 'vendor.adjustment.request' model -->
     <record id="vendor_adjustment_request_tree" model="ir.ui.view">
         <field name="name">vendor.adjustment.request.tree</field>
         <field name="model">vendor.adjustment.request</field>
@@ -11,6 +13,8 @@
             </tree>
         </field>
     </record>
+
+    <!-- Form view for 'vendor.adjustment.request' model -->
     <record id="vendor_adjustment_request_form" model="ir.ui.view">
         <field name="name">vendor.adjustment.request.form</field>
         <field name="model">vendor.adjustment.request</field>
@@ -25,6 +29,7 @@
                         </h1>
                     </div>
                     <group >
+                            <field name='email' widget="email" placeholder="e.g. test@Demo.com" /> 
                             <field name='adjustment_detail' />
                             <field name='comment' placeholder="e.g. This is Demo"/>
                     </group>
@@ -32,6 +37,8 @@
             </form>
         </field>
     </record>
+
+    <!-- Action for 'vendor.adjustment.request' model -->
     <record id="action_adjustment_request" model="ir.actions.act_window">
         <field name="name">Order Adjustment Request Submission</field>
         <field name="res_model">vendor.adjustment.request</field>

@@ -1,5 +1,5 @@
 from odoo import models, fields
-
+# declare new model 
 class Forcast(models.Model):
     _name='vendor.forecast'
 
